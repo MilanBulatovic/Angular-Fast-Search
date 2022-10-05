@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Open sans';
+}
+
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 15px 0px 15px;
+
+    input[type=text] {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 10px;
+        border: 15px solid rgb(138, 199, 236);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px;
+            border-bottom: 1px solid lightgray;
+            gap: 15px;
+        }
+
+        img {
+            max-width: 20%;
+            object-fit: cover;
+            align-self: stretch;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        p {
+            flex:1;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<div class="main" ng-controller="MainController">
+
+    <input type="text" ng-model="fastSearch" placeholder="Filter headlines">
+
+    <ul>
+        <li ng-repeat="item in list | filter:fastSearch">
+            
+            <img ng-src="{{item.image}}" alt="{{item.title}}">
+        
+            <a href="{{item.url}}" target="_blank">
+                <p>{{item.title}}</p>
+            </a>
+        </li>
+    </ul>
+
+
+</div>
+
